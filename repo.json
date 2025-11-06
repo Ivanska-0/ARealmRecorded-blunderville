@@ -1,11 +1,11 @@
 {
   "Author": "Ivanska",
   "Name": "A Realm Recorded Blunderville",
-  "InternalName": "ARealmRecorded",
-  "AssemblyVersion": "1.0.1.0",
+  "InternalName": "ARealmRecordedBlunderville",
+  "AssemblyVersion": "1.0.1.1",
   "Description": "Adds additional features to the duty recorder and automatically starts it in most instances. Also Blunderville!.",
   "ApplicableVersion": "any",
-  "RepoUrl": "https://github.com/UnknownX7/ARealmRecorded",
+  "RepoUrl": "https://github.com/Ivanska-0/ARealmRecorded-blunderville",
   "CategoryTags": [
     "utility"
   ],
