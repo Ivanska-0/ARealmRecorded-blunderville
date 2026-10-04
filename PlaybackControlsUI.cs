@@ -32,6 +32,8 @@ public static unsafe class PlaybackControlsUI
 
         if (!Common.ContentsReplayModule->InPlayback)
         {
+            if (!loadingPlayback && !loadedPlayback) return;
+
             loadingPlayback = false;
             loadedPlayback = false;
             return;
@@ -53,11 +55,11 @@ public static unsafe class PlaybackControlsUI
 
         if (!loadedPlayback)
         {
-            if (Common.ContentsReplayModule->u0x708 != 0)
+            if (Common.ContentsReplayModule->u0x720 != 0)
             {
                 loadingPlayback = true;
             }
-            else if (loadingPlayback && Common.ContentsReplayModule->u0x708 == 0)
+            else if (loadingPlayback && Common.ContentsReplayModule->u0x720 == 0)
             {
                 loadedPlayback = true;
                 if (!ARealmRecorded.Config.EnableWaymarks)
